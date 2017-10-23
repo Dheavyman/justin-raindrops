@@ -1,3 +1,9 @@
+/**
+ * Find the prime-factorization of a number
+ * 
+ * @param {any} number 
+ * @returns {number}
+ */
 const primeFactor = (number) => {
     for (let i = 2; i <= 7; i++) {
         if (number % i === 0) {
@@ -7,6 +13,12 @@ const primeFactor = (number) => {
     return number;
 };
 
+/**
+ * Find if a number has 3, 5 and/or 7 as prime factors 
+ * 
+ * @param {any} number 
+ * @returns {string} 
+ */
 const rainDrops = (number) => {
     let numberToTest = number,
         factor = undefined,
