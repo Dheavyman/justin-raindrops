@@ -1,6 +1,6 @@
 import 'mocha'
 import chai from 'chai';
-import {arithGeo} from '../source/index.js';
+import rainDrops from '../source/index.js';
 
 const assert = chai.assert;
 
@@ -13,7 +13,7 @@ describe('Raindrops', () => {
             assert.deepEqual(rainDrops(1755), 'PlingPlang');
         });
         it('should output 34 for number 34', () => {
-            assert.deepEqual(rainDrops(1755), 34);
+            assert.deepEqual(rainDrops(34), 34);
         });
         it('should output "Pling" for number 3', () => {
             assert.deepEqual(rainDrops(3), 'Pling');
@@ -36,13 +36,19 @@ describe('Raindrops', () => {
         it('should output "PlangPlong" for number 21', () => {
             assert.deepEqual(rainDrops(3), 'Pling');
         });
+        it('should output -2 for number -2', () => {
+            assert.deepEqual(rainDrops(-2), -2);
+        });
+        it('should output 22 for number 22', () => {
+            assert.deepEqual(rainDrops(22), 22);
+        });
     })
     describe('For invalid inputs', () => {
         it('should output "Invalid input" for a string "number"', () => {
             assert.deepEqual(rainDrops('number'),'Invalid input');
         });
         it('should output "Invalid input" for an array "[]"', () => {
-            assert.deepEqual(rainDrops([]), 'Invlaid input');
+            assert.deepEqual(rainDrops([]), 'Invalid input');
         });
         it('should output Invalid input for an object "{}"', () => {
             assert.deepEqual(rainDrops({}), 'Invalid input');
