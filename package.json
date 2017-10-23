@@ -1,0 +1,34 @@
+{
+  "name": "raindrops",
+  "version": "1.0.0",
+  "description": "Check if a number contains prime factors 3, 5 and/or 7",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register tests/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dheavyman/justin-raindrops.git"
+  },
+  "keywords": [
+    "Prime",
+    "factors"
+  ],
+  "author": "Justin Nebo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dheavyman/justin-raindrops/issues"
+  },
+  "homepage": "https://github.com/Dheavyman/justin-raindrops#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
