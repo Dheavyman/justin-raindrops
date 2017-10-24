@@ -19,7 +19,7 @@ describe('Raindrops', () => {
             assert.deepEqual(rainDrops(3), 'Pling');
         });
         it('should output "Pling" for number 6', () => {
-            assert.deepEqual(rainDrops(3), 'Pling');
+            assert.deepEqual(rainDrops(6), 'Pling');
         });
         it('should output "Plang" for number 5', () => {
             assert.deepEqual(rainDrops(5), 'Plang');
@@ -34,7 +34,7 @@ describe('Raindrops', () => {
             assert.deepEqual(rainDrops(14), 'Plong');
         });
         it('should output "PlangPlong" for number 21', () => {
-            assert.deepEqual(rainDrops(3), 'Pling');
+            assert.deepEqual(rainDrops(21), 'PlingPlong');
         });
         it('should output -2 for number -2', () => {
             assert.deepEqual(rainDrops(-2), -2);
